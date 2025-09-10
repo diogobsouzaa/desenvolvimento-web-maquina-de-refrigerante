@@ -1,0 +1,169 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.maquina {
+    background: linear-gradient(135deg, #e0e0e0, #c0c0c0);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 800px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.bebidas {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.bebida-btn {
+    background: linear-gradient(135deg, #4fc3f7, #0288d1);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bebida-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.bebida-btn:active {
+    transform: translateY(1px);
+}
+
+.bebida-btn img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.area-moedas {
+    margin-bottom: 30px;
+}
+
+.slot-moedas {
+    background-color: #a0a0a0;
+    border: 3px dashed #666;
+    border-radius: 10px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.slot-moedas.drag-over {
+    background-color: #888;
+    border-color: #444;
+}
+
+.moedas-disponiveis {
+    display: flex;
+    justify-content: space-around;
+}
+
+.moeda {
+    width: 60px;
+    height: 60px;
+    background: radial-gradient(circle at 30% 30%, #ffd700, #daa520);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: grab;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+}
+
+.moeda:active {
+    cursor: grabbing;
+    transform: scale(0.95);
+}
+
+.visor {
+    background-color: #333;
+    color: #0f0;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Courier New', monospace;
+    font-size: 24px;
+}
+
+.mensagens {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    min-height: 60px;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.mensagens.liberado {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.mensagens.troco {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.selecionado {
+    border: 3px solid #ffeb3b;
+    box-shadow: 0 0 15px #ffeb3b;
+}
+
+.reset-btn {
+    background: linear-gradient(135deg, #f44336, #d32f2f);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    font-size: 18px;
+}
+
+.reset-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.reset-btn:active {
+    transform: translateY(1px);
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máquina de Refrigerante</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="maquina">
+        <h1>Máquina de Refrigerante</h1>
+        
+        <!-- Área de seleção de bebidas -->
+        <div id="bebidas" class="bebidas">
+            <h2>Escolha sua bebida:</h2>
+            <!-- As bebidas serão carregadas aqui via JavaScript -->
+        </div>
+        
+        <!-- Área de inserção de moedas -->
+        <div class="area-moedas">
+            <h2>Insira suas moedas:</h2>
+            <div id="slot-moedas" class="slot-moedas">
+                <p>Arraste as moedas para aqui</p>
+            </div>
+            <div class="moedas-disponiveis">
+                <div class="moeda" data-valor="0.25" draggable="true">25¢</div>
+                <div class="moeda" data-valor="0.50" draggable="true">50¢</div>
+                <div class="moeda" data-valor="1.00" draggable="true">1,00</div>
+            </div>
+        </div>
+        
+        <!-- Visor de valor inserido -->
+        <div class="visor">
+            <h2>Valor inserido:</h2>
+            <p id="valor-inserido">R$ 0,00</p>
+        </div>
+        
+        <!-- Área de mensagens -->
+        <div id="mensagens" class="mensagens"></div>
+        
+        <!-- Botão de reset -->
+        <button id="reset-btn" class="reset-btn">Reiniciar Compra</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
